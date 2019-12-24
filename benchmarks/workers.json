@@ -1,0 +1,48 @@
+  "workers": [
+    {
+      "name": "Aiohttp",
+      "requirements": [
+        "ujson",
+        "aiohttp",
+        "marshmallow",
+        "aioredis",
+        "gunicorn",
+        "uvloop"
+      ],
+      "dirname": "aiohttp_"
+    },
+    {
+      "name": "Tornado",
+      "requirements": [
+        "ujson",
+        "tornado",
+        "marshmallow",
+        "redis"
+      ],
+      "dirname": "tornado_",
+      "force_kill": false
+    },
+    {
+      "name": "Django",
+      "requirements": [
+        "ujson",
+        "django",
+        "marshmallow",
+        "redis",
+        "gunicorn",
+        "meinheld"
+      ],
+      "dirname": "django_"
+    },
+    {
+      "name": "Sanic",
+      "requirements": [
+        "uvloop",
+        "ujson",
+        "sanic",
+        "marshmallow",
+        "aioredis"
+      ],
+      "dirname": "sanic_"
+    }
+  ],
